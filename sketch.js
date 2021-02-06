@@ -41,7 +41,7 @@ function setup() {
  
   monster = new Monster(1000,300,200,200);
   superhero = new Hero(200,200,200,200,{isStatic:false});
-  string = new Rope(superhero.body,{x:200,y:80})
+  string = new Rope(superhero.body,{x:200,y:150})
 
 
 
@@ -75,6 +75,6 @@ function mouseDragged(){
   Matter.Body.setPosition(superhero.body,{x:mouseX,y:mouseY})
 }
 function mouseReleased(){
-  Rope.fly();
+  string.fly();
 }
 

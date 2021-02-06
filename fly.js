@@ -1,7 +1,7 @@
 class Rope{
     constructor(bodyA,pointB){
         var options={
-            stiffness:1.2,
+            stiffness:0.04,
             length:300,
             bodyA:bodyA,
             pointB:pointB
@@ -23,7 +23,7 @@ class Rope{
             var pointB=this.pointB;
             push()
             stroke(48,22,8)
-            strokeWeight(0)
+            strokeWeight(1)
             line(pointB.x,pointB.y,pointA.x,pointA.y)
             pop()
         }
